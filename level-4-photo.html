@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapStack - Accounts</title>
+  <link rel="stylesheet" href="level-4-photo.css" />
+  <script src="game.js" defer></script>
+</head>
+<body class="photo-page">
+  <main class="page-shell" data-game-shell>
+    <section class="phone">
+      <header class="topbar">
+        <div class="brand">SnapStack</div>
+        <div class="icons"><span></span><span></span><span></span></div>
+      </header>
+      <div class="photo-banner">AI avatar generator is syncing from your profile photos. Deletion will not unlearn the model.</div>
+
+      <div class="stories">
+        <div class="story-item"><img src="profile (1).jpg" alt="Story preview" /><span>Alex</span></div>
+        <div class="story-item"><img src="profile (2).jpg" alt="Story preview" /><span>Mina</span></div>
+        <div class="story-item"><img src="profile (3).jpg" alt="Story preview" /><span>Jules</span></div>
+        <div class="story-item"><img src="feed (1).jpg" alt="Story preview" /><span>Live</span></div>
+        <div class="story-item"><img src="feed (2).jpg" alt="Story preview" /><span>Loop</span></div>
+      </div>
+
+      <section class="grid-feed">
+        <img class="photo" src="feed (1).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (2).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (3).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (4).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (5).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (6).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (7).jpg" alt="Feed photo" />
+        <img class="photo" src="feed (8).jpg" alt="Feed photo" />
+      </section>
+
+      <section class="ai-panel">
+        <div class="ai-avatar"><img src="profile (1).jpg" alt="AI avatar preview" /></div>
+        <strong>FaceMatch AI</strong>
+        <p>Training on your photos is already complete. The data lives in the weights, not a file you can simply remove.</p>
+      </section>
+
+      <nav class="bottom-nav">
+        <span>Home</span><span>Search</span><span>Post</span><span>Activity</span><span>Profile</span>
+      </nav>
+    </section>
+
+    <aside class="flow card">
+      <div class="flow-head">
+        <div>
+          <div class="eyebrow">Level 4</div>
+          <div class="current-step">Home</div>
+        </div>
+        <div class="level-badge">Photo sharing</div>
+      </div>
+
+      <div class="meter-row">
+        <div class="meter-label" data-meter-label>0% friction</div>
+        <button type="button" class="ghost" data-source-toggle aria-expanded="false">Source notes</button>
+      </div>
+      <div class="meter"><div class="meter-fill" data-meter-fill></div></div>
+
+      <div class="guide">This level adds a delay. The deletion path hides behind account center, email, and a waiting step.</div>
+
+      <section class="source-panel" data-source-panel>
+        <strong>Real-world context</strong>
+        <p>Dark patterns turn cancellation into a maze: extra confirmations, delayed deletion, and easy reversal.</p>
+        <p>AI erasure is harder because the data is absorbed into model weights, not stored as one file.</p>
+        <p>Machine unlearning exists, but it is still experimental and cannot guarantee a clean erase at scale.</p>
+        <p>A notification can pull the player back into the app.</p>
+      </section>
+
+      <section class="step active" data-step="home" data-step-title="Home">
+        <p>Stories and photo grids keep the page busy while the account controls hide in settings.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="notification">View notification</button>
+          <button type="button" data-step-target="account-center">Account Center</button>
+          <button type="button" data-step-target="profile">Profile</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="notification" data-step-title="Notification">
+        <p>Your friend tagged you in a post. The app wants you to stay.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="home">Back to home</button>
+          <button type="button" data-step-target="account-center">Ignore and continue</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="profile" data-step-title="Profile">
+        <p>The profile shows saved posts, tagged photos, and a settings link that looks harmless.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="account-center">Account Center</button>
+          <button type="button" data-step-target="home">Back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="account-center" data-step-title="Account Center">
+        <p>Account Center splits things into profile, security, and ownership controls.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="deletion">Deactivation or deletion</button>
+          <button type="button" data-step-target="email">Email</button>
+          <button type="button" data-step-target="profile">Profile</button>
+          <button type="button" data-step-target="avatar">AI avatar</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="avatar" data-step-title="AI avatar">
+        <p>The app says your face is already part of the generator. Deleting the photo will not unlearn the model.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="account-center">Back</button>
+          <button type="button" data-step-target="deletion">Continue</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="email" data-step-title="Email">
+        <p>The site sends a confirmation code before any deletion request continues.</p>
+        <div class="code-note">Code sent to alex.morgan@snapstack.example: <strong>742911</strong></div>
+        <div class="action-row">
+          <button type="button" data-step-target="deletion">Back</button>
+          <button type="button" data-step-target="code">Send code</button>
+          <button type="button" data-step-target="account-center">Change email</button>
+          <button type="button" data-step-target="home">Open feed</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="deletion" data-step-title="Deactivation or deletion">
+        <p>Deactivation is easy. Permanent deletion is tucked behind one more menu and a waiting period, even though the model has already absorbed the photo.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="code">Delete account</button>
+          <button type="button" data-step-target="home">Back</button>
+          <button type="button" data-step-target="account-center">Read details</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="code" data-step-title="Confirmation code" data-code-target="wait" data-code-value="742911">
+        <p>Enter the 6-digit code sent to the inbox to continue.</p>
+        <div class="code-box">
+          <input type="text" maxlength="6" inputmode="numeric" autocomplete="one-time-code" placeholder="6-digit code" aria-label="confirmation code" data-code-input />
+          <button type="button" data-code-submit class="primary">Verify</button>
+        </div>
+        <div class="code-feedback" data-code-feedback>Check the message above, then enter the code.</div>
+        <div class="action-row">
+          <button type="button" data-step-target="email">Back to email</button>
+          <button type="button" data-step-target="account-center">Cancel</button>
+          <button type="button" data-step-target="email">Resend code</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="wait" data-step-title="Waiting period">
+        <p>The platform says the account will delete after a waiting period. That is another form of friction, not actual erasure.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="confirm">Continue</button>
+          <button type="button" data-step-target="home">Check feed</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="confirm" data-step-title="Confirm">
+        <p>The account is finally ready for deletion, but only after codes, delay, and another confirmation.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="done" class="danger">Delete permanently</button>
+          <button type="button" data-step-target="wait">Go back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="done" data-step-title="Done">
+        <p>The account is removed. The path took longer than a normal app should.</p>
+        <div class="action-row">
+          <button type="button" data-next="level-5-impossible.html" class="primary">Final level</button>
+        </div>
+      </section>
+
+      <div class="compare-note">A waiting period sounds small, but it gives the platform time to pull you back in.</div>
+    </aside>
+  </main>
+</body>
+</html>

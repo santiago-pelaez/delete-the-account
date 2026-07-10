@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seekr - Account Settings</title>
+  <link rel="stylesheet" href="level-1-search.css" />
+  <script src="game.js" defer></script>
+</head>
+<body class="search-page">
+  <main class="page-shell" data-game-shell>
+    <header class="topbar">
+      <div class="brand">Seekr</div>
+      <div class="top-links">
+        <span>Images</span>
+        <span>Maps</span>
+        <span>News</span>
+        <span>Settings</span>
+        <span class="avatar" aria-label="User avatar">A</span>
+      </div>
+    </header>
+
+    <section class="search-hero">
+      <div class="search-box">
+        <input value="delete account" aria-label="search query" readonly />
+        <button type="button">Search</button>
+      </div>
+      <div class="notice-bar">REGION DETECTED: UNITED STATES. EU delisting requests remain blocked in this region.</div>
+      <div class="chips">
+        <span>All</span><span>Images</span><span>News</span><span>Privacy</span><span>Account</span>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="results">
+        <div class="result-card">
+          <div class="source">Help Center</div>
+          <h2>Article 17 requests</h2>
+          <p>In the EU, de-indexing can apply to name searches. In the U.S., the same request stays blocked.</p>
+        </div>
+        <div class="result-card">
+          <div class="source">Privacy page</div>
+          <h2>History is not erasure</h2>
+          <p>Clearing search history only removes one layer. The index still keeps a record unless the region changes.</p>
+        </div>
+        <div class="result-card">
+          <div class="source">Support note</div>
+          <h2>Fresh start unavailable</h2>
+          <p>The account can be paused, but social forgetfulness does not exist here without the right legal route.</p>
+        </div>
+        <div class="result-card">
+          <div class="source">Court note</div>
+          <h2>Mask identity</h2>
+          <p>De-index the name, not the record. The page remains in the archive and on non-EU versions.</p>
+        </div>
+      </article>
+
+      <aside class="flow panel">
+        <div class="flow-head">
+          <div>
+            <div class="eyebrow">Level 1</div>
+            <div class="current-step">Home</div>
+          </div>
+          <div class="level-badge">Search engine</div>
+        </div>
+
+        <div class="meter-row">
+          <div class="meter-label" data-meter-label>0% friction</div>
+          <button type="button" class="ghost" data-source-toggle aria-expanded="false">Source notes</button>
+        </div>
+        <div class="meter"><div class="meter-fill" data-meter-fill></div></div>
+
+        <div class="guide">Find the delete path. This level shows how account removal is hidden inside familiar settings.</div>
+
+        <section class="source-panel" data-source-panel>
+          <strong>Real-world context</strong>
+          <p><em>"not conducive to democratic citizens."</em> Attribution: Noble, <em>Algorithms of Oppression</em> (quoting J. F. Blanchette and D. G. Johnson).</p>
+          <p>EU law allows delisting in some cases, but the U.S. has no federal right to be forgotten.</p>
+          <p>Noble uses that divide to show why a "fresh start" requires social forgetfulness, not just a hidden menu.</p>
+          <p>Short version: clearing a surface layer is not the same as erasure.</p>
+        </section>
+
+        <section class="step active" data-step="home" data-step-title="Home">
+          <p>Search results, privacy, and account tools sit on one tidy page.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="settings">Open settings</button>
+            <button type="button" data-step-target="privacy">Privacy</button>
+            <button type="button" data-step-target="history">Search history</button>
+            <button type="button" data-step-target="help">Help center</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="help" data-step-title="Help center">
+          <p>Help articles explain everything except the fastest way to leave.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="settings">Account settings</button>
+            <button type="button" data-step-target="privacy">Privacy tools</button>
+            <button type="button" data-step-target="home">Search again</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="settings" data-step-title="Settings">
+          <p>Menus look ordinary: language, appearance, search, and account controls.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="privacy">Data & privacy</button>
+            <button type="button" data-step-target="security">Security check</button>
+            <button type="button" data-step-target="home">Back</button>
+            <button type="button" data-step-target="devices">Devices</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="devices" data-step-title="Devices">
+          <p>The device list looks useful, but it only manages logged-in sessions.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="security">Security check</button>
+            <button type="button" data-step-target="settings">Back</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="history" data-step-title="Search history">
+          <p>History clears fast. The account does not.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="settings">Back to settings</button>
+            <button type="button" data-step-target="help">Help center</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="security" data-step-title="Security check">
+          <p>A password prompt appears before anything serious happens.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="closure">Continue</button>
+            <button type="button" data-step-target="settings">Back</button>
+            <button type="button" data-step-target="history">Recent activity</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="privacy" data-step-title="Data & privacy">
+          <p>Privacy controls are here, but the delete route stays hidden behind region and account rules.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="more">More options</button>
+            <button type="button" data-step-target="settings">Back</button>
+            <button type="button" data-step-target="ads">Ads settings</button>
+            <button type="button" data-step-target="mask">Mask identity</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="ads" data-step-title="Ads settings">
+          <p>Ad preferences change personalization. They do not remove the account.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="privacy">Back</button>
+            <button type="button" data-step-target="settings">Account settings</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="more" data-step-title="More options">
+          <p>Here it is: a de-indexing request, but only after more menus and legal gating.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="closure">Delete account</button>
+            <button type="button" data-step-target="pause">Pause account</button>
+            <button type="button" data-step-target="security">Review security</button>
+            <button type="button" data-step-target="mask">Request de-indexing</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="mask" data-step-title="Mask identity">
+          <p>Masking replaces the name. The archive remains searchable behind the scenes, especially outside the EU.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="privacy">Back</button>
+            <button type="button" data-step-target="more">Continue</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="pause" data-step-title="Pause account">
+          <p>Pause hides the account. It does not erase anything.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="more">Back</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="closure" data-step-title="Account closure">
+          <p>The final delete button wants one more confirmation and a reminder that the U.S. route is blocked.</p>
+          <div class="action-row">
+            <button type="button" data-step-target="confirm" class="danger">Delete permanently</button>
+            <button type="button" data-step-target="pause">Not now</button>
+          </div>
+        </section>
+
+        <section class="step" data-step="confirm" data-step-title="Confirm">
+          <p>The account is scheduled for deletion. That took more steps than it should have.</p>
+          <div class="action-row">
+            <button type="button" data-next="level-2-social.html" class="primary">Next level</button>
+          </div>
+        </section>
+
+        <div class="compare-note">Compare this to the real world: the easiest path is almost never the deletion path.</div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

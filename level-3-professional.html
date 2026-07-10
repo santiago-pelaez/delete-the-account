@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkLine - Close Account</title>
+  <link rel="stylesheet" href="level-3-professional.css" />
+  <script src="game.js" defer></script>
+</head>
+<body class="pro-page">
+  <header class="topbar">
+    <div class="brand">LinkLine</div>
+    <div class="search">Search jobs, people, and posts</div>
+    <div class="nav-icons"><span></span><span></span><span></span><span></span></div>
+  </header>
+  <div class="legal-banner">Article 17 request reviewed against freedom of expression, archiving, and public interest.</div>
+
+  <main class="page-shell" data-game-shell>
+    <aside class="left-rail">
+      <section class="profile card">
+        <img class="cover cover-img" src="feed (4).jpg" alt="Profile banner" />
+        <img class="avatar avatar-img" src="profile (1).jpg" alt="Profile photo" />
+        <h2>Alex Morgan</h2>
+        <p>Product Designer</p>
+        <div class="stats"><div>Connections <strong>836</strong></div><div>Posts <strong>24</strong></div></div>
+      </section>
+      <section class="card faces">
+        <div class="face">
+          <img src="profile (2).jpg" alt="Connection avatar" />
+          <span>Rae</span>
+        </div>
+        <div class="face">
+          <img src="profile (3).jpg" alt="Connection avatar" />
+          <span>Noah</span>
+        </div>
+        <div class="face">
+          <img src="profile (1).jpg" alt="Connection avatar" />
+          <span>Alex</span>
+        </div>
+      </section>
+      <section class="card menu">
+        <div>My network</div><div>Jobs</div><div>Messaging</div><div>Notifications</div>
+      </section>
+    </aside>
+
+    <section class="center-column">
+      <article class="card feed-card">
+        <div class="post-head"><strong>Hiring update</strong><span>2h</span></div>
+        <p>People keep treating profile maintenance like a job. Deletion is somewhere in settings, behind an ownership check.</p>
+      </article>
+      <article class="card feed-card">
+        <div class="post-head"><strong>Connections</strong><span>Today</span></div>
+        <p>Suggested jobs, suggested people, and a sidebar that never stops suggesting things.</p>
+      </article>
+      <article class="card feed-card">
+        <div class="post-head"><strong>Work history</strong><span>Recent</span></div>
+        <p>This profile is packed with useful-looking metadata, which is exactly why leaving feels risky.</p>
+      </article>
+      <article class="card feed-card">
+        <div class="post-head"><strong>Archive record</strong><span>Legal</span></div>
+        <p>Some data may remain for research, statistics, or public-interest archiving.</p>
+      </article>
+    </section>
+
+    <aside class="flow card">
+      <div class="flow-head">
+        <div>
+          <div class="eyebrow">Level 3</div>
+          <div class="current-step">Overview</div>
+        </div>
+        <div class="level-badge">Professional network</div>
+      </div>
+
+      <div class="meter-row">
+        <div class="meter-label" data-meter-label>0% friction</div>
+        <button type="button" class="ghost" data-source-toggle aria-expanded="false">Source notes</button>
+      </div>
+      <div class="meter"><div class="meter-fill" data-meter-fill></div></div>
+
+      <div class="guide">This level adds identity checks, which makes leaving feel procedural instead of user-friendly.</div>
+
+      <section class="source-panel" data-source-panel>
+        <strong>Real-world context</strong>
+        <p><em>"more than 95% of requests"</em> came from <em>"every-day members of the public."</em> Attribution: Noble, <em>Algorithms of Oppression</em> (citing The Guardian, July 2015).</p>
+        <p>Noble's "social forgetfulness" argument says people need the ability to move on and form a new identity.</p>
+        <p>GDPR Article 17 helps, but the request still gets balanced against expression, archiving, and public interest.</p>
+        <p>Permanent records do the opposite: they freeze old versions of a person and make the exit feel risky.</p>
+        <p>It is a paper trail made to look like a product flow.</p>
+      </section>
+
+      <section class="step active" data-step="overview" data-step-title="Overview">
+        <p>The profile looks useful and active. The delete path is tucked behind account management.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="settings">Settings</button>
+          <button type="button" data-step-target="privacy">Privacy</button>
+          <button type="button" data-step-target="connections">Connections</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="connections" data-step-title="Connections">
+        <p>Connections make the profile feel valuable, which makes leaving feel like cutting off a network.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="overview">Back</button>
+          <button type="button" data-step-target="settings">Account settings</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="privacy" data-step-title="Privacy">
+        <p>Privacy options are friendly, but they do not remove the account or erase the archive.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="settings">Account settings</button>
+          <button type="button" data-step-target="overview">Back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="settings" data-step-title="Settings">
+        <p>Identity, billing, and account preferences all share one corporate-looking menu. The delete option sits with legal review.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="reason">Close account</button>
+          <button type="button" data-step-target="identity">Identity</button>
+          <button type="button" data-step-target="overview">Back</button>
+          <button type="button" data-step-target="archive">Legal review</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="archive" data-step-title="Legal review">
+        <p>Erasure denied: archiving, research, and expression take priority here, so the record stays visible.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="settings">Back</button>
+          <button type="button" data-step-target="reason">Continue</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="identity" data-step-title="Identity">
+        <p>The site wants a legal name, recovery email, and proof of ownership before it will consider erasure.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="reason">Continue</button>
+          <button type="button" data-step-target="settings">Back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="reason" data-step-title="Reason">
+        <p>A dropdown asks why you are leaving before the account can be closed. It treats the request like a compliance exercise.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="close">Continue</button>
+          <button type="button" data-step-target="settings">Back</button>
+          <button type="button" data-step-target="overview">Leave later</button>
+          <button type="button" data-step-target="archive">See exemption</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="close" data-step-title="Close account" data-code-target="done" data-code-value="abc123">
+        <p>The final confirmation asks for a password and one more reason check before the legal trail closes.</p>
+        <div class="code-note">Password hint: <strong>enter abc123</strong></div>
+        <div class="code-box">
+          <input type="password" maxlength="6" autocomplete="current-password" placeholder="Password" aria-label="password" data-code-input />
+          <button type="button" data-code-submit class="primary">Verify</button>
+        </div>
+        <div class="code-feedback" data-code-feedback>Enter the password shown above to continue.</div>
+        <div class="action-row">
+          <button type="button" data-step-target="reason">Change answer</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="done" data-step-title="Done">
+        <p>The profile is gone. A professional platform made the player work for it.</p>
+        <div class="action-row">
+          <button type="button" data-next="level-4-photo.html" class="primary">Next level</button>
+        </div>
+      </section>
+
+      <div class="compare-note">This is the "official" version of friction: forms, reasons, and proof before relief.</div>
+    </aside>
+  </main>
+</body>
+</html>

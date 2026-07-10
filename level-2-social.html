@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FaceLoop - Account Center</title>
+  <link rel="stylesheet" href="level-2-social.css" />
+  <script src="game.js" defer></script>
+</head>
+<body class="social-page">
+  <header class="topbar">
+    <div class="brand">FaceLoop</div>
+    <div class="search">Search FaceLoop</div>
+    <div class="icons"><span></span><span></span><span></span><span class="bubble">2</span></div>
+  </header>
+  <div class="notice-strip">Subscription saved. Cancellation hidden one step deeper.</div>
+
+  <main class="page-shell" data-game-shell>
+    <aside class="sidebar">
+      <div class="profile card">
+        <img class="avatar avatar-img" src="profile (1).jpg" alt="Profile photo" />
+        <h2>Alex Morgan</h2>
+        <p>Friends 184</p>
+        <p>Posts 52</p>
+      </div>
+      <div class="card faces">
+        <div class="face">
+          <img src="profile (2).jpg" alt="Friend avatar" />
+          <span>Mina</span>
+        </div>
+        <div class="face">
+          <img src="profile (3).jpg" alt="Friend avatar" />
+          <span>Jules</span>
+        </div>
+        <div class="face">
+          <img src="profile (1).jpg" alt="Friend avatar" />
+          <span>Alex</span>
+        </div>
+      </div>
+      <div class="card shortcuts">
+        <div>Friends</div><div>Memories</div><div>Saved</div><div>Groups</div>
+      </div>
+    </aside>
+
+    <section class="feed">
+      <div class="stories card">
+        <button class="story-item" type="button"><img src="feed (1).jpg" alt="Story photo" /><span>Story</span></button>
+        <button class="story-item" type="button"><img src="feed (2).jpg" alt="Story photo" /><span>Story</span></button>
+        <button class="story-item" type="button"><img src="feed (3).jpg" alt="Story photo" /><span>Story</span></button>
+        <button class="story-item" type="button"><img src="feed (4).jpg" alt="Story photo" /><span>Story</span></button>
+        <button class="story-item" type="button"><img src="feed (5).jpg" alt="Story photo" /><span>Story</span></button>
+      </div>
+      <article class="post card post-with-media">
+        <div class="post-head"><strong>Jordan</strong><span>5m</span></div>
+        <p>The cancel flow asked me to keep perks first, then sent me to account center, then asked again.</p>
+      </article>
+      <article class="post card post-with-media">
+        <div class="post-head"><strong>Priya</strong><span>12m</span></div>
+        <p>No, I don't want Free Shipping. Somehow that was the button before the cancellation menu.</p>
+      </article>
+      <article class="post card post-with-media">
+        <div class="post-head"><strong>Trending</strong><span>Now</span></div>
+        <p>#IliadFlow #DarkPatterns #SubscriptionTrap #AccountCenter</p>
+      </article>
+      <article class="post card">
+        <div class="post-head"><strong>Service notice</strong><span>Now</span></div>
+        <p>Canceling is available in Account Center after a short review of benefits, reminders, and retention.</p>
+      </article>
+    </section>
+
+    <aside class="flow card">
+      <div class="flow-head">
+        <div>
+          <div class="eyebrow">Level 2</div>
+          <div class="current-step">Feed</div>
+        </div>
+        <div class="level-badge">Social feed</div>
+      </div>
+
+      <div class="meter-row">
+        <div class="meter-label" data-meter-label>0% friction</div>
+        <button type="button" class="ghost" data-source-toggle aria-expanded="false">Source notes</button>
+      </div>
+      <div class="meter"><div class="meter-fill" data-meter-fill></div></div>
+
+      <div class="guide">This level shows a familiar trick: keep people in the feed, then bury deletion behind account settings.</div>
+
+      <section class="source-panel" data-source-panel>
+        <strong>Real-world context</strong>
+        <p><em>"digital muck."</em> Attribution: Noble, <em>Algorithms of Oppression</em> (quoting Peter Fleischer).</p>
+        <p>FTC pressure on Amazon showed how cancellation traps are built into the interface on purpose.</p>
+        <p>Noble points out that most deletion requests come from ordinary people who want relief, not cover-up.</p>
+        <p>One tap back can undo a lot of progress.</p>
+      </section>
+
+      <section class="step active" data-step="feed" data-step-title="Feed">
+        <p>The feed is busy. The account controls live behind the profile and settings menu.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="profile">Profile</button>
+          <button type="button" data-step-target="accounts-center">Account Center</button>
+          <button type="button" data-step-target="notification">View notification</button>
+          <button type="button" data-step-target="saved">Saved</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="notification" data-step-title="Notification">
+        <p>Your friend tagged you in a post. The app wants you to stay in the feed.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="feed">Back to feed</button>
+          <button type="button" data-step-target="profile">Open tag</button>
+          <button type="button" data-step-target="offers">View offers</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="offers" data-step-title="Offers">
+        <p>Your account includes perks, memories, and shipping benefits. The flow keeps treating cancellation like a bad choice.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="feed">Keep account</button>
+          <button type="button" data-step-target="accounts-center">Continue to account center</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="saved" data-step-title="Saved">
+        <p>Saved posts and memories keep the feed feeling useful. Deletion still lives somewhere else.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="feed">Back</button>
+          <button type="button" data-step-target="accounts-center">Account Center</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="profile" data-step-title="Profile">
+        <p>Edit profile, story settings, and privacy links all appear here. Deletion still hides in the account center.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="accounts-center">Settings</button>
+          <button type="button" data-step-target="feed">Back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="accounts-center" data-step-title="Account Center">
+        <p>Deactivation is easy. Permanent deletion is behind one more set of controls, like a subscription trap with a nicer label.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="personal-details">Personal details</button>
+          <button type="button" data-step-target="deactivate">Deactivate account</button>
+          <button type="button" data-step-target="profile">Profile settings</button>
+          <button type="button" data-step-target="offers">Review perks</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="personal-details" data-step-title="Personal details">
+        <p>The site asks for identity and profile ownership before showing the final path.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="accounts-center">Back</button>
+          <button type="button" data-step-target="deactivate">Continue</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="deactivate" data-step-title="Deactivate account">
+        <p>The account can be hidden temporarily, but the platform keeps nudging toward return with reminders and one more prompt.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="delete">Delete permanently</button>
+          <button type="button" data-step-target="accounts-center">Back</button>
+          <button type="button" data-step-target="feed">Stay on feed</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="delete" data-step-title="Delete permanently">
+        <p>A second confirmation screen appears. The platform wants to make sure this is really what you mean.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="done" class="danger">Yes, delete it</button>
+          <button type="button" data-step-target="deactivate">Go back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="done" data-step-title="Done">
+        <p>The account is removed, but the route was harder than it should have been.</p>
+        <div class="action-row">
+          <button type="button" data-next="level-3-professional.html" class="primary">Next level</button>
+        </div>
+      </section>
+
+      <div class="compare-note">Real platforms often make "stay" easy and "leave" slow.</div>
+    </aside>
+  </main>
+</body>
+</html>

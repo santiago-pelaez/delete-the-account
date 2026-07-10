@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamPort - Channel Settings</title>
+  <link rel="stylesheet" href="level-5-impossible.css" />
+  <script src="game.js" defer></script>
+</head>
+<body class="impossible-page">
+  <main class="page-shell" data-game-shell>
+    <aside class="sidebar card">
+      <div class="brand">StreamPort Studio</div>
+      <div class="nav-list">
+        <div>Dashboard</div><div>Content</div><div>Analytics</div><div>Comments</div><div>Copyright</div><div>Settings</div>
+      </div>
+      <div class="mini-card">
+        <strong>Recent uploads</strong>
+        <p>Episode 1</p><p>Episode 2</p><p>Episode 3</p>
+      </div>
+    </aside>
+
+    <section class="main-column">
+      <section class="cards">
+        <article class="card stat">
+          <span>Views</span>
+          <strong>1.2M</strong>
+        </article>
+        <article class="card stat">
+          <span>Watch time</span>
+          <strong>4,822h</strong>
+        </article>
+        <article class="card stat">
+          <span>Subscribers</span>
+          <strong>18.4K</strong>
+        </article>
+      </section>
+
+      <article class="card feed">
+        <div class="section-title">Recent activity</div>
+        <div class="activity-row"><img class="thumb" src="feed (4).jpg" alt="Upload preview" /><div><strong>Upload complete</strong><p>New episode published 6 minutes ago.</p></div></div>
+        <div class="activity-row"><img class="thumb" src="feed (5).jpg" alt="Comments preview" /><div><strong>Comments</strong><p>Moderation pending for 4 replies.</p></div></div>
+        <div class="activity-row"><img class="thumb" src="feed (6).jpg" alt="Monetization preview" /><div><strong>Monetization</strong><p>Revenue dashboard refreshed.</p></div></div>
+      </article>
+
+      <article class="card chat-feed" data-chatbot-root>
+        <div class="chat-head">
+          <div>
+            <div class="section-title"><img class="chat-avatar" src="profile (1).jpg" alt="Support avatar" />AI support</div>
+            <p class="chat-subtitle">StreamBot is online and optimized for low-cost resolutions.</p>
+          </div>
+          <div class="chat-pill">24/7</div>
+        </div>
+
+        <div class="chat-log" data-chat-log aria-live="polite" aria-label="Support conversation"></div>
+
+        <div class="chat-quick" aria-label="Quick replies">
+          <button type="button" data-chat-quick="delete">Delete account</button>
+          <button type="button" data-chat-quick="human">Human agent</button>
+          <button type="button" data-chat-quick="code">GDPR_17</button>
+          <button type="button" data-chat-quick="wait">Why wait?</button>
+        </div>
+
+        <form class="chat-form" data-chat-form>
+          <input type="text" data-chat-input placeholder="Ask StreamBot..." aria-label="Chat message" />
+          <button type="submit">Send</button>
+        </form>
+        <div class="chat-status" data-chat-status>StreamBot is typing...</div>
+      </article>
+    </section>
+
+    <aside class="flow card">
+      <div class="flow-head">
+        <div>
+          <div class="eyebrow">Level 5</div>
+          <div class="current-step">Dashboard</div>
+        </div>
+        <div class="level-badge">Impossible</div>
+      </div>
+
+      <div class="meter-row">
+        <div class="meter-label" data-meter-label>0% friction</div>
+        <button type="button" class="ghost" data-source-toggle aria-expanded="false">Source notes</button>
+      </div>
+      <div class="meter"><div class="meter-fill" data-meter-fill></div></div>
+
+      <div class="guide">This level removes the real escape hatch. The menu offers archive, help, and policy pages instead.</div>
+
+      <section class="source-panel" data-source-panel>
+        <strong>Real-world context</strong>
+        <p><em>"Too many companies are deploying AI to cut costs, not solve problems, and customers can tell the difference."</em> Attribution: Qualtrics (2025).</p>
+        <p>AI customer service is often deployed to cut costs, not solve problems, which makes the support wall feel intentional.</p>
+        <p>That matters because AI support is reported to fail at nearly four times the rate of other AI tasks.</p>
+        <p>In AI systems, deletion gets harder because the data is not just stored in a file; it is baked into the model weights.</p>
+        <p>Noble's invisible archive warning fits here: companies can keep sharing and repurposing data outside public view.</p>
+      </section>
+
+      <section class="step active" data-step="dashboard" data-step-title="Dashboard">
+        <p>The dashboard is polished, full of analytics, and very good at avoiding the delete word.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="support">Help center</button>
+          <button type="button" data-step-target="archive">Archive channel</button>
+          <button type="button" data-step-target="policies">Policies</button>
+          <button type="button" data-step-target="chatbot">Ask AI support</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="chatbot" data-step-title="AI support">
+        <p>StreamBot is upbeat, but it only offers retention tools and self-service loops.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="support">Delete anyway</button>
+          <button type="button" data-step-target="blocked">Human agent</button>
+          <button type="button" data-step-target="dashboard">Back</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="support" data-step-title="Help center">
+        <p>The help center routes you to export tools, restore tools, and more account-preserving features.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="archive">Archive only</button>
+          <button type="button" data-step-target="blocked">I still want to delete</button>
+          <button type="button" data-step-target="policies">Read policy</button>
+          <button type="button" data-step-target="chatbot">Ask AI support</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="archive" data-step-title="Archive channel">
+        <p>Archiving preserves everything for restoration later. It is not deletion.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="support">Back to support</button>
+          <button type="button" data-step-target="policies">View policies</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="policies" data-step-title="Policies">
+        <p>The policy page repeats the refusal. There is no delete route here.</p>
+        <div class="action-row">
+          <button type="button" data-step-target="support">Help center</button>
+          <button type="button" data-step-target="blocked">Try delete anyway</button>
+          <button type="button" data-step-target="archive">Archive instead</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="blocked" data-step-title="Deletion unavailable">
+        <p>There is no delete account path here. The account can be archived, exported, or supported, but not erased.</p>
+        <div class="action-row">
+          <button type="button" data-recap-toggle aria-expanded="false" class="primary">Show takeaway</button>
+          <button type="button" data-restart="true">Restart game</button>
+        </div>
+      </section>
+
+      <section class="recap-screen" data-recap-screen>
+        <strong>Takeaway</strong>
+        <p>Deletion is not just a button. It is a legal, technical, and political problem.</p>
+        <p>The walkthrough shows the same pattern across different services: easy to join, hard to leave.</p>
+        <div class="action-row">
+          <button type="button" data-restart="true" class="primary">Play again</button>
+        </div>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
